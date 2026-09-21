@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<title>Costa Sur Apartment - Calendario</title>
+<title>Ancla Costa Sur - Calendario</title>
 <style>
   * { box-sizing: border-box; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; margin: 0; padding: 28px; color: #1a2332; }
   h1 { text-align: center; color: #0b2447; margin-bottom: 4px; }
   .subtitle { text-align: center; color: #64748b; margin-bottom: 6px; font-size: 14px; }
   .grand-total { text-align: center; color: #0b2447; margin-bottom: 22px; font-size: 13px; font-weight: 600; }
-  .legend { display: flex; justify-content: center; gap: 24px; margin-bottom: 26px; font-size: 13px; }
+  .legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; margin-bottom: 26px; font-size: 13px; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid #d0d5dd; }
   .sections { max-width: 900px; margin: 0 auto; }
@@ -22,6 +22,7 @@
   .day.empty { border: none; background: transparent; }
   .day .num { position: absolute; top: 2px; left: 4px; font-size: 10px; color: #64748b; font-weight: 600; }
   .day.stay { background: #cfe3f7; border-color: #a9c9e8; }
+  .day.owner-block { background: #e2e5ea; border-color: #b8bfc9; }
   .day .name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; padding: 0 2px; font-size: 9px; line-height: 1.15; font-weight: 700; color: #0b2447; text-align: center; word-break: break-word; }
   .day.checkin-edge { box-shadow: inset 3px 0 0 #1a9d5c; }
   .day.checkout-edge { box-shadow: inset -3px 0 0 #7b2fb5; }
@@ -35,6 +36,7 @@
   tfoot td { font-weight: 700; border-top: 2px solid #0b2447; background: #f8fafc; }
   .no-bookings { color: #94a3b8; font-size: 13px; font-style: italic; }
   .missing { color: #b45309; font-style: italic; font-weight: 400; }
+  .blocked-row td { color: #64748b; font-style: italic; }
   @media print {
     body { background: white; padding: 0; }
     .month-block { box-shadow: none; border: 1px solid #e5e9f0; }
@@ -42,16 +44,25 @@
 </style>
 </head>
 <body>
-  <h1>Costa Sur Apartment - Playa de Las Am&eacute;ricas</h1>
+  <h1>Ancla Costa Sur</h1>
   <div class="subtitle">Calendario prenotazioni aggiornato</div>
   <div class="legend">
     <span><span class="swatch" style="background:#fff;box-shadow:inset 3px 0 0 #1a9d5c"></span> Check-in</span>
     <span><span class="swatch" style="background:#cfe3f7"></span> Soggiorno</span>
     <span><span class="swatch" style="background:#fff;box-shadow:inset -3px 0 0 #7b2fb5"></span> Check-out</span>
+    <span><span class="swatch" style="background:#e2e5ea"></span> Bloccato (proprietari)</span>
     <span><span class="swatch" style="background:#fff"></span> Libero</span>
   </div>
   <div class="sections">
     
+    <section class="month-block">
+      <h2>Novembre 2026</h2>
+      <div class="grid">
+        <div class="wd">Lun</div><div class="wd">Mar</div><div class="wd">Mer</div><div class="wd">Gio</div><div class="wd">Ven</div><div class="wd">Sab</div><div class="wd">Dom</div>
+        <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day" title=""><span class="num">1</span></div><div class="day" title=""><span class="num">2</span></div><div class="day" title=""><span class="num">3</span></div><div class="day" title=""><span class="num">4</span></div><div class="day" title=""><span class="num">5</span></div><div class="day" title=""><span class="num">6</span></div><div class="day" title=""><span class="num">7</span></div><div class="day" title=""><span class="num">8</span></div><div class="day" title=""><span class="num">9</span></div><div class="day" title=""><span class="num">10</span></div><div class="day" title=""><span class="num">11</span></div><div class="day" title=""><span class="num">12</span></div><div class="day" title=""><span class="num">13</span></div><div class="day" title=""><span class="num">14</span></div><div class="day" title=""><span class="num">15</span></div><div class="day" title=""><span class="num">16</span></div><div class="day" title=""><span class="num">17</span></div><div class="day" title=""><span class="num">18</span></div><div class="day" title=""><span class="num">19</span></div><div class="day" title=""><span class="num">20</span></div><div class="day" title=""><span class="num">21</span></div><div class="day" title=""><span class="num">22</span></div><div class="day" title=""><span class="num">23</span></div><div class="day" title=""><span class="num">24</span></div><div class="day" title=""><span class="num">25</span></div><div class="day" title=""><span class="num">26</span></div><div class="day" title=""><span class="num">27</span></div><div class="day" title=""><span class="num">28</span></div><div class="day" title=""><span class="num">29</span></div><div class="day" title=""><span class="num">30</span></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+      </div>
+      <div class="no-bookings">Nessuna prenotazione questo mese</div>
+    </section>
     <section class="month-block">
       <h2>Dicembre 2026</h2>
       <div class="grid">
@@ -113,6 +124,46 @@
           <td class="num-col">1,555.60 &euro;</td><td></td>
           <td class="num-col">253.56 &euro;</td>
           <td class="num-col">1,302.04 &euro;</td>
+        </tr></tfoot>
+      </table>
+    </section>
+    <section class="month-block">
+      <h2>Febbraio 2027</h2>
+      <div class="grid">
+        <div class="wd">Lun</div><div class="wd">Mar</div><div class="wd">Mer</div><div class="wd">Gio</div><div class="wd">Ven</div><div class="wd">Sab</div><div class="wd">Dom</div>
+        <div class="day" title=""><span class="num">1</span></div><div class="day" title=""><span class="num">2</span></div><div class="day" title=""><span class="num">3</span></div><div class="day" title=""><span class="num">4</span></div><div class="day" title=""><span class="num">5</span></div><div class="day" title=""><span class="num">6</span></div><div class="day" title=""><span class="num">7</span></div><div class="day" title=""><span class="num">8</span></div><div class="day" title=""><span class="num">9</span></div><div class="day" title=""><span class="num">10</span></div><div class="day" title=""><span class="num">11</span></div><div class="day" title=""><span class="num">12</span></div><div class="day" title=""><span class="num">13</span></div><div class="day" title=""><span class="num">14</span></div><div class="day" title=""><span class="num">15</span></div><div class="day" title=""><span class="num">16</span></div><div class="day" title=""><span class="num">17</span></div><div class="day" title=""><span class="num">18</span></div><div class="day" title=""><span class="num">19</span></div><div class="day" title=""><span class="num">20</span></div><div class="day" title=""><span class="num">21</span></div><div class="day" title=""><span class="num">22</span></div><div class="day" title=""><span class="num">23</span></div><div class="day" title=""><span class="num">24</span></div><div class="day" title=""><span class="num">25</span></div><div class="day" title=""><span class="num">26</span></div><div class="day" title=""><span class="num">27</span></div><div class="day" title=""><span class="num">28</span></div>
+      </div>
+      <div class="no-bookings">Nessuna prenotazione questo mese</div>
+    </section>
+    <section class="month-block">
+      <h2>Marzo 2027</h2>
+      <div class="grid">
+        <div class="wd">Lun</div><div class="wd">Mar</div><div class="wd">Mer</div><div class="wd">Gio</div><div class="wd">Ven</div><div class="wd">Sab</div><div class="wd">Dom</div>
+        <div class="day" title=""><span class="num">1</span></div><div class="day" title=""><span class="num">2</span></div><div class="day" title=""><span class="num">3</span></div><div class="day" title=""><span class="num">4</span></div><div class="day" title=""><span class="num">5</span></div><div class="day" title=""><span class="num">6</span></div><div class="day owner-block checkin-edge" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">7</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">8</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">9</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">10</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">11</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">12</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">13</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">14</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">15</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">16</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">17</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">18</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">19</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">20</span><span class="name">PROPRIETARI</span></div><div class="day owner-block" title="PROPRIETARI | 07/03/2027 -> 22/03/2027"><span class="num">21</span><span class="name">PROPRIETARI</span></div><div class="day checkout-only" title=""><span class="num">22</span></div><div class="day" title=""><span class="num">23</span></div><div class="day" title=""><span class="num">24</span></div><div class="day" title=""><span class="num">25</span></div><div class="day" title=""><span class="num">26</span></div><div class="day" title=""><span class="num">27</span></div><div class="day" title=""><span class="num">28</span></div><div class="day" title=""><span class="num">29</span></div><div class="day" title=""><span class="num">30</span></div><div class="day" title=""><span class="num">31</span></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+      </div>
+      
+      <table>
+        <thead><tr>
+          <th>Ospite</th><th>Portale</th><th>Nr. prenotazione</th><th>Check-in</th><th>Check-out</th><th>Notti</th>
+          <th>Prezzo</th><th>Pulizia</th><th>Commissione</th><th>Netto</th>
+        </tr></thead>
+        <tbody><tr class="blocked-row">
+            <td>PROPRIETARI</td>
+            <td>-</td>
+            <td>-</td>
+            <td>07/03/2027</td>
+            <td>22/03/2027</td>
+            <td class="num-col">15</td>
+            <td class="num-col">-</td>
+            <td class="num-col">-</td>
+            <td class="num-col">-</td>
+            <td class="num-col net">-</td>
+        </tr></tbody>
+        <tfoot><tr>
+          <td colspan="6">Totale mese</td>
+          <td class="num-col">0.00 &euro;</td><td></td>
+          <td class="num-col">0.00 &euro;</td>
+          <td class="num-col">0.00 &euro;</td>
         </tr></tfoot>
       </table>
     </section>
